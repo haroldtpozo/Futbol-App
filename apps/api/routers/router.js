@@ -1,34 +1,29 @@
 const express = require('express');
 const router = express.Router();
+const { GoogleSpreadsheet } = require('googleapis');
 
-const { GoogleSpreadsheet } = require('google-spreadsheet');
-const doc = new GoogleSpreadsheet('ID_DEL_GOOGLE_SHEET');
+const SPREADSHEET_ID = '1AClLwo_T0tXbA-SsiLjRF_dipdbINfxjD5eevl5BMiU';
 
-router.get('/players', async (req, res) => {
+const SHEET_NAME = 'Clasificación';
+
+async function getSheetData() {
+  const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
+  await doc.useApiKey(process.env.GOOGLE_API_KEY);
+  const sheet = doc.sheetsByTitle(SHEET_NAME);
+  const rows = await sheet.getRows();
+  const data = rows.map((row) => row._rawData);
+
+  return data;
+}
+
+router.get('/data', async (req, res) => {
   try {
-    await doc.useServiceAccountAuth({
-      client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-      private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, '\n'),
-    });
-
-    await doc.loadInfo();
-
-    const sheet = doc.sheetsByIndex[0];
-
-    const rows = await sheet.getRows();
-    const players = rows.map((row) => ({
-      name: row.name,
-      position: row.position,
-      points: row.points,
-    }));
-
-    res.json(players);
+    const sheetData = await getSheetData();
+    res.json(sheetData);
   } catch (error) {
-    console.error('Error al obtener los jugadores:', error);
-    res.status(500).json({ error: 'Error al obtener los jugadores' });
+    console.error(error);
+    res.status(500).json({ message: 'Error fetching data' });
   }
 });
-
-router.get('/players/:id', (req, res) => {});
 
 module.exports = router;
