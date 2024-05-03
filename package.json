@@ -15,5 +15,10 @@
   ],
   "devDependencies": {
     "turbo": "^1.13.2"
+  },
+  "dependencies": {
+    "i": "^0.3.7",
+    "npm": "^10.7.0",
+    "react-router-dom": "^6.23.0"
   }
 }

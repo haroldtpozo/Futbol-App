@@ -1,0 +1,24 @@
+.header{
+    width: 1294px;
+    height: 133px;
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.25rem solid var(--color-text);
+    padding: 0 60px 0 60px;
+
+}   
+
+
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+span{
+font-size: var(--text-nav);
+font-weight: 600;
+}

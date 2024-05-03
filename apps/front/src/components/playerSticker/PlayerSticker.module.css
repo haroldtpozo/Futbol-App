@@ -1,0 +1,15 @@
+
+.containerSticker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary);
+    width: 280px;
+    height: 400px;
+    border: 3px solid var(--color-text); 
+}
+
+img{
+    border: 3px solid var(--color-text);
+}
