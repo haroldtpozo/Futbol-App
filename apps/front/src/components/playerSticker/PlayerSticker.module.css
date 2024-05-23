@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--color-secondary);
-    width: 280px;
+    width: 300px;
     height: 400px;
     border: 3px solid var(--color-text); 
 }
@@ -13,3 +13,9 @@
 img{
     border: 3px solid var(--color-text);
 }
+.sticker {
+    background-color: yellow;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+  }

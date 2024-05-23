@@ -1,0 +1,59 @@
+.containerData{
+    width: 525px;
+    height: 234px;
+    border: 3px solid var(--color-text);
+    background-color: var(--color-secondary3);
+}
+
+.title{
+    padding: 20px;
+}
+.title h1{
+    margin: 0px;
+}
+
+.spanJugador{
+    font-size: var(--text-textos);
+   
+}
+
+.spanDatos{
+    font-size: var(--text-textos);
+    font-weight: 700;
+}
+
+.containerEstadis{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+
+}
+
+.containerData1{
+    display: flex;
+    gap: 20px;
+
+ 
+}
+
+.containerData2{
+    display: flex;
+    gap: 20px;
+    
+    
+
+}
+
+.containerDatos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.containerDataplayer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}

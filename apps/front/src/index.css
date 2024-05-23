@@ -5,8 +5,14 @@
   --color-secondary1:#FF8F93;
   --color-secondary2:#7A89C2;
   --color-secondary3:#54BEB2;
+  --color-goles:#58B09C;
+  --color-tarjeta:#EBD408;
+  --color-tarjeta1:#979DAC;
+  --color-victoria:#59C9A5;
+  --color-derrota:#FF8F93;
 
   --text-nav: 1.3125rem;
+  --text-textos:1.0625rem;
   --text-title: 1.5625rem;
   --text-general:1.0625rem;
   --text-info:0.875rem;

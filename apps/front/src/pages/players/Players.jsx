@@ -3,6 +3,7 @@ import React from "react";
 import Sticker from "../../components/playerSticker/PlayerSticker";
 
 import styles from "./Players.module.css";
+import { Link } from "react-router-dom";
 
 function Players() {
     return (
@@ -12,7 +13,13 @@ function Players() {
                     <h1>Jugadores</h1>
                 </div>
                 <div className={styles.gridContainer}>
-                    <Sticker styles={{ width: "40%", height: "40%" }} />
+                    <Link to="/estadisticas">
+                        <Sticker />
+                    </Link>
+                    <Sticker />
+                    <Sticker />
+                    <Sticker />
+                    <Sticker />
                 </div>
             </div>
         </>

@@ -1,0 +1,18 @@
+.containerPuntaje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 234px;
+    border: 3px solid var(--color-text);
+    background-color: var(--color-secondary1);
+}
+
+.containerText{
+    display: flex;
+   justify-content: center;
+}
+
+.textPuntaje {
+    font-size: 105px;
+}

@@ -1,0 +1,21 @@
+.containerEstadisticas{
+    padding: 0 60px 0 60px;
+    width: 1294px;
+}
+
+
+.Container{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.Container2{
+    display: flex;
+    gap: 20px;
+}
+
+.containerGeneral{
+display: flex;
+gap: 20px;
+}

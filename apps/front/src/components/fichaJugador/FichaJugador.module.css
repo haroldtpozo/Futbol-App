@@ -1,0 +1,41 @@
+.fichaJugador{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    height: 639px;
+    width: 415px;
+    border: 3px solid var(--color-text);
+    background-color: var(--color-secondary1);
+}
+
+.dataJugador{
+    display: flex;
+    width: 280px;
+    gap: 10px;
+}
+
+.datos{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.datos2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.spanJugador{
+    font-size: var(--text-textos);
+   
+}
+
+.spanDatos{
+    font-size: var(--text-textos);
+    font-weight: 700;
+}

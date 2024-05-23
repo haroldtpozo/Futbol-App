@@ -1,0 +1,62 @@
+.fichaJornada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: 233px;
+    width: 233px;
+    border: 3px solid var(--color-text);
+    background-color: var(--color-primary);
+}
+
+.dataContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+
+}
+
+.datosJornada{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+
+.resultadosJornada{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.squareGoles{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 93px;
+    height: 36px;
+    background-color: var(--color-goles);
+}
+
+.squareTarjetas{
+
+     width: 93px;
+     height: 36px;
+     background-color: var(--color-tarjeta);
+}
+
+.squareResultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     width: 93px;
+     height: 36px;
+     background-color: var(--color-victoria);
+}
+
+.spanDatos{
+    font-size: var(--text-textos);
+    font-weight: 700;
+}

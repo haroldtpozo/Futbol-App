@@ -1,0 +1,22 @@
+.fichaPerformance{
+    width: 813px;
+    height: 380px;
+    background-color: var(--color-secondary2);
+    border: 3px solid var(--color-text);
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    padding: 20px;
+}
+.title h1{
+    margin: 0px;
+}
+
+.fichaJornadas{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+}
