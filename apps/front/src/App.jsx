@@ -1,20 +1,21 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import axios from 'axios';
 
-import AppLayout from "./app/appLayout/AppLayout";
-import Players from "./pages/players/Players";
+import AppLayout from './app/appLayout/AppLayout';
+import Players from './pages/players/Players';
 
-import styles from "./App.module.css";
-import Estadisticas from "./pages/estadisticas/Estadisticas";
+import styles from './App.module.css';
+import Estadisticas from './pages/estadisticas/Estadisticas';
 
 function App() {
-    return (
-        <Routes>
-            <Route path="/" element={<AppLayout />}>
-                <Route path="/jugadores" element={<Players />}></Route>
-                <Route path="/estadisticas" element={<Estadisticas />}></Route>
-            </Route>
-        </Routes>
-    );
+  return (
+    <Routes>
+      <Route path="/" element={<AppLayout />}>
+        <Route path="/jugadores" element={<Players />}></Route>
+        <Route path="/estadisticas" element={<Estadisticas />}></Route>
+      </Route>
+    </Routes>
+  );
 }
 export default App;
